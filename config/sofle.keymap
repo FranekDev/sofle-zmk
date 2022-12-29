@@ -18,8 +18,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        &left_encoder { resolution = <1>; };
-        &right_encoder { resolution = <1>; };
+        resolution = <1>;
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
