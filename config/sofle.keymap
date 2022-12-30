@@ -34,7 +34,7 @@
                  &kp LGUI &kp LALT &kp LCTRL &mo 1  &kp SPACE    &kp RET &lt 2 LEFT  &kp UP &kp DOWN  &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP &inc_dec_cp C_BRI_DN C_BRI_UP>;
+            sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN &inc_dec_cp C_BRI_DN C_BRI_UP>;
             // sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp LC(LEFT) LC(RIGHT)>;
             
         };
