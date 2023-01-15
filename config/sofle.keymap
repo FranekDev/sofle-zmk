@@ -34,7 +34,8 @@
                  &kp LGUI &kp LALT &kp LCTRL &mo 1  &kp SPACE    &kp RET &lt 2 LEFT  &kp DOWN  &kp UP    &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(PG_DN) LC(PG_UP)>;
+            sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN &inc_dec_cp C_BRI_DN C_BRI_UP>;
+            // sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp LC(LEFT) LC(RIGHT)>;
             
         };
 
@@ -54,7 +55,8 @@
                     &trans    &trans      &trans    &trans    &trans   &trans &trans    &kp LT   &kp GT          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
+            // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN &inc_dec_cp C_BRI_DN C_BRI_UP>;
         };
 
         raise_layer {
@@ -66,13 +68,14 @@
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
-&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp PRCNT  &trans
+&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
 &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_cp PG_DN PG_UP &inc_dec_cp C_VOL_UP C_VOL_DN>;
+            // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN &inc_dec_cp C_BRI_DN C_BRI_UP>;
         };
     };
 };
